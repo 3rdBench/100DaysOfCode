@@ -24,20 +24,22 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 
 # Display a greeting
 print("Welcome to Tresure Island.")
+
+# Display game's goal to the user
 print("Your mission is to find the treasure.")
 
-# Start of the adventure
+# Provide choice of direction to the user
 user_direction = input("You're at a cross road. Where do you want to go? Type \"left\" or \"right\"\n")
 
-# Direction to go
+# Provide choice of action to the user
 if user_direction.lower() == "left":
     user_action = input("You've come to a lake. There is an island in the middle of the lake. Type \"wait\" to wait for a boat. Type \"swim\" to swim across.\n")
 
-    # Action to take
+    # Provide selection of doors to the user
     if user_action.lower() == "wait":
         door_choice = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?\n")
 
-        # Door to choose from
+        # Doors to choose from
         if door_choice.lower() == "red":
             print("It's a room full of fire. Game Over.")
         elif door_choice.lower() == "yellow":
@@ -45,6 +47,7 @@ if user_direction.lower() == "left":
         elif door_choice.lower() == "blue":
             print("You enter a room of beasts. Game Over.")
         else:
+            # In the event that a non-existent door has been selected
             print("You chose a door that doesn't exist. Game Over.")
 
     else:
