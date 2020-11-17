@@ -51,7 +51,9 @@ if user_direction == "left":
             print("You chose a door that doesn't exist. Game Over.")
 
     else:
+        # Any other action results to game over
         print("You get attacked by an angry trout. Game Over.")
 
 else:
+    # Any other direction results to game over
     print("You fell into a hole. Game Over.")
