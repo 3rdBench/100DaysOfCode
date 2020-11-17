@@ -1,4 +1,4 @@
-# Display ASCII art
+# Display ASCII art (source: https://ascii.co.uk/art)
 print('''
 *******************************************************************************
           |                   |                  |                     |
@@ -29,25 +29,25 @@ print("Welcome to Tresure Island.")
 print("Your mission is to find the treasure.")
 
 # Provide choice of direction to the user
-user_direction = input("You're at a cross road. Where do you want to go? Type \"left\" or \"right\"\n")
+user_direction = input("You're at a cross road. Where do you want to go? Type \"left\" or \"right\".\n").lower()
 
 # Provide choice of action to the user
-if user_direction.lower() == "left":
-    user_action = input("You've come to a lake. There is an island in the middle of the lake. Type \"wait\" to wait for a boat. Type \"swim\" to swim across.\n")
+if user_direction == "left":
+    user_action = input("You've come to a lake. There is an island in the middle of the lake. Type \"wait\" to wait for a boat. Type \"swim\" to swim across.\n").lower()
 
     # Provide selection of doors to the user
-    if user_action.lower() == "wait":
-        door_choice = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?\n")
+    if user_action == "wait":
+        door_choice = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose?\n").lower()
 
         # Doors to choose from
-        if door_choice.lower() == "red":
+        if door_choice == "red":
             print("It's a room full of fire. Game Over.")
-        elif door_choice.lower() == "yellow":
+        elif door_choice == "yellow":
             print("You found the treasure! You Win!")
-        elif door_choice.lower() == "blue":
+        elif door_choice == "blue":
             print("You enter a room of beasts. Game Over.")
         else:
-            # In the event that a non-existent door has been selected
+            # In the event that a non-existent door is selected
             print("You chose a door that doesn't exist. Game Over.")
 
     else:
