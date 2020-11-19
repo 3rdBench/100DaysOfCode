@@ -36,12 +36,10 @@ hand_gesture = [rock, paper, scissors]
 
 # Display how to play the game & get the user's choice
 user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
-
 print(hand_gesture[user_choice])
 
 # Generate the computer's choice
 computer_choice = random.randint(0,2)
-
 print("Computer chose:\n")
 print(hand_gesture[computer_choice])
 
