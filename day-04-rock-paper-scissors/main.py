@@ -43,14 +43,13 @@ computer_choice = random.randint(0,2)
 print("Computer chose:\n")
 print(hand_gesture[computer_choice])
 
-if user_choice == computer_choice:
-    print("It is a tie.") 
-
 if (user_choice == 0) and (computer_choice == 2):
     print("You win.")
 elif (user_choice == 2) and (computer_choice == 1):
     print("You win.")
 elif (user_choice == 1) and (computer_choice == 0):
     print("You win.")
+elif user_choice == computer_choice:
+    print("It is a tie.")
 else:
     print("You lose.")
