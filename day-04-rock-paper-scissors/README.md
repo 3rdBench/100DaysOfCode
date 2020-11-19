@@ -6,9 +6,9 @@ A simple text-based version of the 'Rock, Paper, Scrissors' game.
 
 The user is asked for a choice between Rock, Paper or Scissors
 * The program provides the choice as whole numbers between 0 to 2 (0 = Rock, 1 = Paper, 2 = Scissors)
-* User the corresponding choice
-* The programs generates its own choice
-* Corresponding hand gestures (ASCII art) and result are displayed on the console
+* User selects the corresponding choice
+* The programs generates its own
+* Selected hand gesture (ASCII art) and result are displayed on the console
 
 ### How does it work?
 
