@@ -36,20 +36,36 @@ hand_gesture = [rock, paper, scissors]
 
 # Display how to play the game & get the user's choice
 user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
-print(hand_gesture[user_choice])
 
 # Generate the computer's choice
 computer_choice = random.randint(0,2)
-print("Computer chose:\n")
-print(hand_gesture[computer_choice])
 
-if (user_choice == 0) and (computer_choice == 2):
-    print("You win.")
+# Check for incorrect user input
+if (user_choice >= 3) or (user_choice < 0):
+    print("You typed an invalid number, you lose!")
+# Implement game logic    
+elif (user_choice == 0) and (computer_choice == 2):
+    print(hand_gesture[user_choice])
+    print("Computer chose:")
+    print(hand_gesture[computer_choice])
+    print("You win")
 elif (user_choice == 2) and (computer_choice == 1):
-    print("You win.")
+    print(hand_gesture[user_choice])
+    print("Computer chose:")
+    print(hand_gesture[computer_choice])
+    print("You win")
 elif (user_choice == 1) and (computer_choice == 0):
-    print("You win.")
+    print(hand_gesture[user_choice])
+    print("Computer chose:")
+    print(hand_gesture[computer_choice])
+    print("You win")
 elif user_choice == computer_choice:
-    print("It is a tie.")
+    print(hand_gesture[user_choice])
+    print("Computer chose:")
+    print(hand_gesture[computer_choice])    
+    print("It is a draw.")
 else:
-    print("You lose.")
+    print(hand_gesture[user_choice])
+    print("Computer chose:")
+    print(hand_gesture[computer_choice])    
+    print("You lose")
