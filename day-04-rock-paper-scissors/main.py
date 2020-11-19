@@ -43,27 +43,31 @@ computer_choice = random.randint(0,2)
 # Check for incorrect user input
 if (user_choice >= 3) or (user_choice < 0):
     print("You typed an invalid number, you lose!")
-# Implement game logic    
+# Rock wins against Scissors    
 elif (user_choice == 0) and (computer_choice == 2):
     print(hand_gesture[user_choice])
     print("Computer chose:")
     print(hand_gesture[computer_choice])
     print("You win")
+# Scissors wins against Paper   
 elif (user_choice == 2) and (computer_choice == 1):
     print(hand_gesture[user_choice])
     print("Computer chose:")
     print(hand_gesture[computer_choice])
     print("You win")
+# Paper wins against Rock    
 elif (user_choice == 1) and (computer_choice == 0):
     print(hand_gesture[user_choice])
     print("Computer chose:")
     print(hand_gesture[computer_choice])
     print("You win")
+# Draw    
 elif user_choice == computer_choice:
     print(hand_gesture[user_choice])
     print("Computer chose:")
     print(hand_gesture[computer_choice])    
     print("It is a draw.")
+# User loses    
 else:
     print(hand_gesture[user_choice])
     print("Computer chose:")
