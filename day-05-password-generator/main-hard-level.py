@@ -19,19 +19,18 @@ generated_password = []
 for character in range(0, nr_letters):
     generated_password.append(random.choice(letters))
     
-
-# Collect random letters from list (i.e. symbols)
+# Collect random symbols from list (i.e. symbols)
 for character in range(0, nr_symbols):
     generated_password.append(random.choice(symbols))
      
-# Collect random letters from list (i.e. numbers)
+# Collect random numbers from list (i.e. numbers)
 for character in range(0, nr_numbers):
     generated_password.append(random.choice(numbers))
 
 # Shuffle the order of collected characters
 random.shuffle(generated_password)
 
-# Join random-ordered characters into a string
+# Combine the random-ordered characters into a string
 final_password = ""
 
 for character in generated_password:

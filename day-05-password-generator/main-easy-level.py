@@ -19,11 +19,11 @@ generated_password = ""
 for character in range(0, nr_letters):
     generated_password += random.choice(letters)
 
-# Collect random letters from list (i.e. symbols)
+# Collect random symbols from list (i.e. symbols)
 for character in range(0, nr_symbols):
     generated_password += random.choice(symbols)
  
-# Collect random letters from list (i.e. numbers)
+# Collect random numbes from list (i.e. numbers)
 for character in range(0, nr_numbers):
     generated_password += random.choice(numbers)
 
